@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  overflow-x: hidden;
+
+  /* BACKGROUND IMAGE */
+  background-image: url("/images/bground.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* DARK OVERLAY (IMPORTANT) */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(3, 7, 18, 0.65);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ALL CONTENT ABOVE BACKGROUND */
+main {
+  position: relative;
+  z-index: 1;
+}

@@ -54,7 +54,7 @@ export default function Hero() {
           </a>
 
           <a
-            href="#services"
+            href="#contact"
             className="px-8 py-4 rounded-2xl border border-white/20 bg-white/5 backdrop-blur-md font-semibold hover:border-blue-500 hover:bg-white/10 transition-all duration-300"
           >
             Contact Me
